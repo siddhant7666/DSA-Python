@@ -244,3 +244,44 @@ def my_func2(*kids):
     print("The youngest child is " + kids[2])
 
 my_func2("Emil", "Tobias", "Linus")
+
+####################################################
+
+#name = input("Enter your name: ")
+#age = input("Enter your age: ")
+#print(f"Hello {name}, you are {age} years old.")
+
+
+a = int(input("Enter first digit: "))
+b = int(input("Enter second digit: "))
+
+operation = int(input("For addition, please Enter 1\nFor subtraction, please Enter 2\nFor multiplication, please Enter 3\nFor division, please Enter 4\n"))
+
+try:
+    match operation:
+        case 1:
+            print(f"The sum of {a} and {b} is {a+b}")
+        case 2:
+            print(f"The difference of {a} and {b} is {a-b}")
+        case 3:
+            print(f"The product of {a} and {b} is {a*b}")
+        case 4:
+            if b==0:
+                print("Division by zero is not allowed")
+            else:
+                print(f"The division of {a} by {b} is {a/b}")
+        case _:
+            print("Invalid operation selected")
+            
+except ValueError:
+    print("Invalid input. Please enter numeric values for digits and operation.")
+# if a=10, b=5, operation = abc then it will print "Invalid input. Please enter numeric values for digits and operation."
+        
+            
+    
+    
+num = int(input("Enter a number: "))
+if num%2==0:
+    print("Num is even")
+else:
+    print("num is odd")
