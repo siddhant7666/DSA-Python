@@ -280,8 +280,10 @@ except ValueError:
             
     
     
-num = int(input("Enter a number: "))
+num = int((input("Enter a number: "))) #the issue is that input() returns a string, so we need to convert it to an integer before performing the modulus operation. We can do this by wrapping the input() function with int().
 if num%2==0:
     print("Num is even")
 else:
-    print("num is odd")
+    print("num is odd") 
+    
+    
